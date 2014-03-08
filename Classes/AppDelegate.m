@@ -24,7 +24,7 @@
 	if (!mobileApplicationsPath)
 	{
 		NSString *simulatorHostHome = NSProcessInfo.processInfo.environment[@"IPHONE_SIMULATOR_HOST_HOME"];
-		for (NSString *path in @[ @"Music/iTunes/Mobile Applications", @"Music/iTunes/iTunes Media/Mobile Applications" ])
+		for (NSString *path in @[ @"Music/iTunes/Mobile Applications", @"Music/iTunes/iTunes Music/Mobile Applications" ])
 		{
 			NSString *fullPath = [simulatorHostHome stringByAppendingPathComponent:path];
 			if ([[NSFileManager defaultManager] fileExistsAtPath:fullPath])
